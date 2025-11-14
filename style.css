@@ -92,7 +92,7 @@ nav a:hover::after {
 
 /* Слайдер */
 .slider-section {
-    margin-top: 120px;
+    margin-top: 200px;
     position: relative;
 }
 
@@ -632,4 +632,5 @@ footer {
     }
 
 }
+
 

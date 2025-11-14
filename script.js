@@ -148,6 +148,23 @@ class SmoothScroll {
             });
         }
     }
+    handleNavClick(e) {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            const offsetTop = targetElement.offsetTop - 80;
+            
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+            
+            // Закрываем мобильное меню если оно есть
+            this.closeMobileMenu();
+        }
+    }
 }
 
 // Валидация формы
@@ -420,4 +437,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.service-card, .gallery-item').forEach((el, index) => {
         el.style.setProperty('--delay', index);
     });
+
 });

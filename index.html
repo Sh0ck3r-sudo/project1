@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Grooming - Профессиональный груминг</title>
+    <link type="image/x-icon" href="img/logo1.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img href="#" src="img/logo1.png" alt="Pawfect Grooming">
+                <span class="logo-text">Pawfect Grooming</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#schedule">График</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Слайдер -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="img/slide1.jpg" alt="Груминг собаки">
+                    <div class="slide-text">
+                        <h2>Профессиональный груминг</h2>
+                        <p>Забота о ваших питомцах</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide2.jpg" alt="Стрижка кошки">
+                    <div class="slide-text">
+                        <h2>Гигиенические процедуры</h2>
+                        <p>Для здоровья и красоты</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide3.jpg" alt="Уход за шерстью">
+                    <div class="slide-text">
+                        <h2>SPA-процедуры</h2>
+                        <p>Расслабление и уход</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide4.jpg" alt="Породистая стрижка">
+                    <div class="slide-text">
+                        <h2>Креативный груминг</h2>
+                        <p>Превращаем питомцев в звёзд!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-button">‹</button>
+            <button class="next-button">›</button>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- О грумере -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>О нашем грумере</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Анна Петрова</h3>
+                    <p>Я - сертифицированный профессиональный грумер с 8-летним опытом работы. Окончила школу груминга "PetStyle" и регулярно повышаю квалификацию на международных семинарах.</p>
+                    <p>Специализируюсь на различных породах собак и кошек. Использую только профессиональную косметику и оборудование премиум-класса.</p>
+                    <div class="certificates">
+                        <h4>Сертификаты и дипломы:</h4>
+                        <ul>
+                            <li>Международный сертификат IPG</li>
+                            <li>Диплом школы груминга "PetStyle"</li>
+                            <li>Сертификат по первой помощи животным</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/groomer.jpeg" alt="Наш грумер">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🐕</div>
+                    <h3>Комплексный груминг</h3>
+                    <p>Мытье, сушка, стрижка, обработка когтей, чистка ушей</p>
+                    <span class="price">от 1500 руб.</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Гигиеническая стрижка</h3>
+                    <p>Стрижка проблемных зон, уход за шерстью</p>
+                    <span class="price">от 1000 руб.</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛁</div>
+                    <h3>SPA-процедуры</h3>
+                    <p>Лечебные ванны, маски, ароматерапия</p>
+                    <span class="price">от 800 руб.</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎀</div>
+                    <h3>Креативный груминг</h3>
+                    <p>Стрижка под породу, модельные прически</p>
+                    <span class="price">от 2000 руб.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Наши работы</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/1.jpg" alt="До и после 1" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2.jpg" alt="До и после 2" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/3.jpg" alt="До и после 3" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/4.jpg" alt="До и после 4" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/5.jpg" alt="До и после 5" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/6.jpg" alt="До и после 6" onclick="openModal(this)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- График работы -->
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <h2>График работы</h2>
+            <div class="schedule-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>День недели</th>
+                            <th>Время работы</th>
+                            <th>Перерыв</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>9:00 - 18:00</td>
+                            <td>13:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Вторник</td>
+                            <td>9:00 - 18:00</td>
+                            <td>13:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td>9:00 - 18:00</td>
+                            <td>13:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Четверг</td>
+                            <td>9:00 - 18:00</td>
+                            <td>13:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Пятница</td>
+                            <td>9:00 - 18:00</td>
+                            <td>13:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Суббота</td>
+                            <td>10:00 - 16:00</td>
+                            <td>13:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Воскресенье</td>
+                            <td>Выходной</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="schedule-notes">
+                    <h3>Важная информация:</h3>
+                    <ul>
+                        <li>Запись по предварительной записи</li>
+                        <li>При себе иметь ветеринарный паспорт</li>
+                        <li>Длительность процедуры: 1.5-3 часа</li>
+                        <li>Срочный прием: +50% к стоимости</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📞 Телефон</h3>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Адрес</h3>
+                        <p>г. Москва, ул. Пушкинская, д. 15</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@pawfect-grooming.ru</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Записаться на прием</h3>
+                    <form id="appointment-form">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Сообщение (порода, желаемые услуги)"></textarea>
+                        <button type="submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="social-link"><img src="img/logo.png" alt="Pawfect Grooming"></a>
+                    <span>Pawfect Grooming</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://vk.com/" class="social-link">
+                        <img src="img/vk.png" alt="VK">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-link">
+                        <img src="img/ig.png" alt="Instagram">
+                    </a>
+                    <a href="https://web.telegram.org/" class="social-link">
+                        <img src="img/tg.png" alt="Telegram">
+                    </a>
+                    <a href="https://www.whatsapp.com/" class="social-link">
+                        <img src="img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pawfect Grooming. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для галереи -->
+    <div id="gallery-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption"></div>
+    </div>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scroll-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
